@@ -1,3 +1,5 @@
+; this code inverts the order of a given list
+
 (define (_invert l il)
   [if (pair? l)    
     (_invert (cdr l) (cons (car l) il))
